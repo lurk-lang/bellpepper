@@ -20,7 +20,7 @@ blake2s_simd = { workspace = true }
 byteorder = { workspace = true }
 ff = { workspace = true }
 serde = { version = "1.0", features = ["derive"] }
-thiserror = "1.0.44"
+thiserror = "2.0.9"
 
 [dev-dependencies]
 blstrs = { workspace = true }
