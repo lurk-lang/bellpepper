@@ -9,6 +9,7 @@ use blake2s_simd::State as Blake2s;
 use byteorder::{BigEndian, ByteOrder};
 use ff::PrimeField;
 
+#[allow(dead_code)]
 #[derive(Debug)]
 enum NamedObject {
     Constraint(usize),

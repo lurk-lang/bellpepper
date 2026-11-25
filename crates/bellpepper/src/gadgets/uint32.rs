@@ -317,7 +317,7 @@ impl UInt32 {
 
         // Compute the maximum value of the sum so we allocate enough bits for
         // the result
-        let mut max_value = (operands.len() as u64) * (u64::from(u32::max_value()));
+        let mut max_value = (operands.len() as u64) * (u64::from(u32::MAX));
 
         // Keep track of the resulting value
         let mut result_value = Some(0u64);
@@ -415,7 +415,7 @@ mod test {
     use bellpepper_core::ConstraintSystem;
     use blstrs::Scalar as Fr;
     use ff::Field;
-    use rand_core::{RngCore, SeedableRng};
+    use rand_core::{Rng, SeedableRng};
     use rand_xorshift::XorShiftRng;
 
     #[test]
