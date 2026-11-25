@@ -374,7 +374,7 @@ impl<'a, Scalar: PrimeField> Sub<(Scalar, &'a LinearCombination<Scalar>)>
     }
 }
 
-#[cfg(all(test, feature = "groth16"))]
+#[cfg(test)]
 mod tests {
     use super::*;
     use blstrs::Scalar;

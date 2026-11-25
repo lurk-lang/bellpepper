@@ -111,7 +111,7 @@ mod tests {
         use super::*;
         use bellpepper_core::ConstraintSystem;
         use blstrs::Scalar as Fr;
-        use rand_core::{RngCore, SeedableRng};
+        use rand_core::{Rng, SeedableRng};
         use rand_xorshift::XorShiftRng;
 
         use crate::gadgets::boolean::{AllocatedBit, Boolean};

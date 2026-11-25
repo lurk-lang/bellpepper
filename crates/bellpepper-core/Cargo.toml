@@ -13,7 +13,7 @@ repository = "https://github.com/argumentcomputer/bellpepper"
 version = "0.4.0"
 readme = "../../README.md"
 edition = "2021"
-rust-version = "1.66.0"
+rust-version = "1.85.0"
 
 [dependencies]
 blake2s_simd = { workspace = true }
